@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Layout 2</title>
+
+    <script src="https://use.fontawesome.com/9f3a3f21f2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class=" font-Inter mx-auto container">
+
+    <div class=" grid grid-cols-9 xl:grid-cols-12">
+        <div class=" col-span-9 bg-gray-100 h-auto xl:h-screen relative">
+            <header class=" border-b-2 border-gray-300 py-5 bg-white w-full px-10 " >
+                <div class=" flex flex-row space-x-14 " >
+                    <span class=" font-bold" >OvonRueden</span>
+                    <div class="  md:flex md:flex-row xl:space-x-14 space-x-7 hidden">
+                        <h3 class=" text-indigo-700 font-bold" >01. About you</h3>
+                        <h3>02. Position</h3>
+                        <h3>03. Work</h3>
+                        <h3>04. Demographic</h3>
+                        <h3>05. Essay</h3>
+                    </div>
+                </div>
+            </header>
+
+            <div class=" mt-20 px-10 pb-16">
+                <h2 class=" text-gray-800 font-semibold text-2xl md:text-3xl w-full md:w-9/12 lg:w-6/12 xl:w-4/12 my-16" > Select the category that best describe you.</h2>
+                <div class=" grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-10" >
+                    <div class=" bg-white flex flex-col justify-center items-center pb-5 p-10 rounded relative shadow-xl " >
+                        <div class=" bg-indigo-700 text-white w-10 h-10 flex justify-center align-middle items-center rounded-tr absolute top-0 right-0" ><i class="fa fa-check"></i></div>
+                        <img src="../assets/teacher.svg" alt="Teacher">
+                        <h3>Teacher</h3>
+                    </div>
+                    <div class=" bg-white flex flex-col justify-center items-center p-10 rounded">
+                        <img src="../assets/student.svg" alt="Student">
+                        <h3>Student</h3>
+                    </div>
+                    <div class=" bg-white flex flex-col justify-center items-center p-10  rounded">
+                        <img src="../assets/scientist.svg" alt="Scientist">
+                        <h3>Scientist</h3>
+                    </div>
+                    <div class=" bg-white flex flex-col justify-center items-center p-10 rounded ">
+                        <img src="../assets/speaker.svg" alt="Speaker">
+                        <h3>Speaker</h3>
+                    </div>
+                    <div class=" bg-white flex flex-col justify-center items-center p-10 rounded">
+                        <img src="../assets/reader.svg" alt="Reader">
+                        <h3>Reader</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" px-10 mb-5 absolute bottom-0 left-0 w-full ">
+                <button class=" float-left " > <span class=" mr-1">&#8592;</span> back</button>
+                <button class=" float-right bg-indigo-700 text-white px-3 py-1 rounded" >  Continue <span class=" ml-2">&#8594;</span> </button>
+                <div class=" clear-both"></div>
+            </div>
+            <div class=" clear-both"></div>
+
+        </div>
+        <div class=" relative col-span-9 xl:col-span-3 bg-white h-auto xl:h-screen flex justify-center align-middle items-center">
+            <div class=" p-20">
+                <img src="../assets/loading.svg" alt="Loading Image">
+                <div class=" px-10 mb-5 absolute bottom-0 left-0 w-full text-lg font-medium text-gray-800 ">
+                    <span class=" float-left" >Step</span>
+                    <span class=" float-right">2/5</span>
+                    <div class=" clear-both"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

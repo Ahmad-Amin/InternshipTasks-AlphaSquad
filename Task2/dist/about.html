@@ -20,27 +20,29 @@
             <div class=" ml-0">
                 <h1 class=" text-gray-800 font-bold text-5xl" >Who we are</h1>
                 <p class=" text-gray-600 font-normal w-9/12 my-3" >We are designer, developer, and testers. We provide best design solution to our clients. Working perfectly with our clients. </p>
-                <button class=" font-medium bg-indigo-700 text-white px-4 py-2 rounded mt-2" > Know More</button>
+                <button role="button" aria-label="Know More" class=" font-medium bg-indigo-700 text-white px-4 py-2 rounded mt-2" > Know More</button>
             </div>
         </div>
-        <div class=" col-span-5 mt-5 ">
-            <div class=" flex flex-col sm:grid sm:grid-cols-5 md:grid md:grid-cols-5 gap-5 ">
-                <div class="relative col-span-2 bg-img1 bg-center bg-cover h-80" >
-                    <div class=" inline-block bg-white py-1 px-3 md:py-2 md:px-6 absolute bottom-0 left-0" >
-                        <p>Jack Bill</p>
-                        <p>Support</p>
+        <div role="grid" class=" col-span-5 mt-5 ">
+            <div role="rowgroup" >
+                <div role="row" class=" flex flex-col sm:grid sm:grid-cols-5 md:grid md:grid-cols-5 gap-5 ">
+                    <div role="gridcell" aria-colindex="1" class="relative col-span-2 bg-img1 bg-center bg-cover h-80" >
+                        <div class=" inline-block bg-white py-1 px-3 md:py-2 md:px-6 absolute bottom-0 left-0" >
+                            <p>Jack Bill</p>
+                            <p>Support</p>
+                        </div>
                     </div>
-                </div>
-                <div class="relative col-span-3 bg-img2 bg-center bg-cover h-80" >
-                    <div class=" inline-block bg-white py-1 px-3 md:py-2 md:px-6 absolute bottom-0 left-0" >
-                        <p>Dan Joseph</p>
-                        <p>Manager</p>
+                    <div role="gridcell" aria-colindex="2" class="relative col-span-3 bg-img2 bg-center bg-cover h-80" >
+                        <div class=" inline-block bg-white py-1 px-3 md:py-2 md:px-6 absolute bottom-0 left-0" >
+                            <p>Dan Joseph</p>
+                            <p>Manager</p>
+                        </div>
                     </div>
-                </div>
-                <div class="relative col-span-5 bg-img3 bg-center bg-cover h-80" >
-                    <div class=" inline-block bg-white py-1 px-3 md:py-2 md:px-6 absolute bottom-0 left-0" >
-                        <p>Anna, Bill, Sam, Ashly</p>
-                        <p>Designers</p>
+                    <div role="gridcell" aria-colindex="3" class="relative col-span-5 bg-img3 bg-center bg-cover h-80" >
+                        <div class=" inline-block bg-white py-1 px-3 md:py-2 md:px-6 absolute bottom-0 left-0" >
+                            <p>Anna, Bill, Sam, Ashly</p>
+                            <p>Designers</p>
+                        </div>
                     </div>
                 </div>
             </div>

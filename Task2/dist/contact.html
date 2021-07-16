@@ -23,32 +23,36 @@
             A good idiom for kids is "It's raining cats and dogs." Kids know what both cats and dogs are from an early age so they can understand it's not literally raining cats and dogs, and it's just raining really hard. This is an simple way to illustrate what an idiom is that kids can easily conceptualize.
         </p>
 
-        <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-10" >
-            <div class=" border-2 border-gray-200 h-60 flex flex-col justify-center p-4 rounded" >
-                <div>
-                    <div class=" bg-indigo-50 inline-block relative p-4 rounded-full mb-8" >
-                        <img src="../assets/svgs/phone.svg" alt="Phone">
+        <div role="grid" aria-colcount="3">
+            <div role="rowgroup">
+                <div role="row" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-10" >
+                    <div role="gridcell" aria-colindex="1" class=" border-2 border-gray-200 h-60 flex flex-col justify-center p-4 rounded" >
+                        <div>
+                            <div class=" bg-indigo-50 inline-block relative p-4 rounded-full mb-8" >
+                                <img src="../assets/svgs/phone.svg" alt="Phone Logo">
+                            </div>
+                            <h2 class=" text-gray-800 font-semibold text-xl mb-1" >Phone</h2>
+                            <p class=" text-gray-600 font-normal w-6/12 mx-auto" >(007) 095-6890</p>
+                        </div>
                     </div>
-                    <h2 class=" text-gray-800 font-semibold text-xl mb-1" >Phone</h2>
-                    <p class=" text-gray-600 font-normal w-6/12 mx-auto" >(007) 095-6890</p>
-                </div>
-            </div>
-            <div class=" border-2 border-gray-200 h-60 flex flex-col justify-center p-4 rounded" >
-                <div>
-                    <div class=" bg-indigo-50 inline-block relative px-4 py-5 rounded-full mb-8" >
-                        <img src="../assets/svgs/mail.svg" alt="Email ">
+                    <div role="gridcell" aria-colindex="2" class=" border-2 border-gray-200 h-60 flex flex-col justify-center p-4 rounded" >
+                        <div>
+                            <div class=" bg-indigo-50 inline-block relative px-4 py-5 rounded-full mb-8" >
+                                <img src="../assets/svgs/mail.svg" alt="Email Logo ">
+                            </div>
+                            <h2 class=" text-gray-800 font-semibold text-xl mb-1" >Email</h2>
+                            <p class=" text-gray-600 font-normal w-6/12 mx-auto" >Alphasquad@gmail.com</p>
+                        </div>
                     </div>
-                    <h2 class=" text-gray-800 font-semibold text-xl mb-1" >Email</h2>
-                    <p class=" text-gray-600 font-normal w-6/12 mx-auto" >Alphasquad@gmail.com</p>
-                </div>
-            </div>
-            <div class=" border-2 border-gray-200 h-60 flex flex-col justify-center p-4 rounded" >
-                <div>
-                    <div class=" bg-indigo-50 inline-block relative px-5 py-4 rounded-full mb-8" >
-                        <img src="../assets/svgs/location.svg" alt="Location Pin">
+                    <div role="gridcell" aria-colindex="3" class=" border-2 border-gray-200 h-60 flex flex-col justify-center p-4 rounded" >
+                        <div>
+                            <div class=" bg-indigo-50 inline-block relative px-5 py-4 rounded-full mb-8" >
+                                <img src="../assets/svgs/location.svg" alt="Location Pin Logo">
+                            </div>
+                            <h2 class=" text-gray-800 font-semibold text-xl mb-1" >Address</h2>
+                            <p class=" text-gray-600 font-normal w-6/12 xs:w-9/12 mx-auto" >13420 - Oak Street, New York City (9134200)</p>
+                        </div>
                     </div>
-                    <h2 class=" text-gray-800 font-semibold text-xl mb-1" >Address</h2>
-                    <p class=" text-gray-600 font-normal w-6/12 xs:w-9/12 mx-auto" >13420 - Oak Street, New York City (9134200)</p>
                 </div>
             </div>
         </div>

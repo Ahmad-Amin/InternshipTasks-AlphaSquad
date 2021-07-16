@@ -23,7 +23,7 @@
         <a href="#" class="block">
             <span class=" text-white font-black">TankShot</span>
         </a>
-        <button @click="mobileMenuOpen = !mobileMenuOpen"
+        <button aria-label="Open Navigation Panel" role="button" @click="mobileMenuOpen = !mobileMenuOpen"
             class="inline-block md:hidden w-8 h-8 text-white p-1">
             <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
@@ -49,40 +49,42 @@
     <div class=" absolute top-0 left-0 z-10 bg-gradient-to-b from-purple-600 to-indigo-700 h-96 w-screen">
 
     </div>
-    <div class="  flex flex-col item-center justify-center relative z-30 mx-auto container shadow-lg w-full lg:w-8/12 xl:w-6/12 bg-white text-center pt-5 px-10 lg:px-20 rounded mt-5">
+    <div role="form" aria-label="Contact information" class=" flex flex-col item-center justify-center relative z-30 mx-auto container shadow-lg w-full lg:w-8/12 xl:w-6/12 bg-white text-center pt-5 px-10 lg:px-20 rounded mt-5">
         <h3 class=" text-gray-700 text-2xl font-bold mb-5" > Let's chat and get a quote!</h3>
-        <form class=" text-left mt-5 md:my-5" action="./contact.html">
+        <form autocomplete="off" class=" text-left mt-5 md:my-5" action="./contact.html">
             <div class=" grid grid-cols-1 sm:grid-cols-2 gap-3 mb-7">
                 <div>
                     <label class=" text-xs md:text-sm block text-cgray-800 font-bold mb-2" for="name">Name</label>
-                    <input class=" bg-gray-200 appearance-none border-2 border-gray-200 rounded py-1 px-4 w-full" name="name" type="text" placeholder="eg. Ronald McDonald">
+                    <input class=" bg-gray-200 appearance-none border-2 border-gray-200 rounded py-1 px-4 w-full" id="name" aria label="name" name="name" type="text" placeholder="eg. Ronald McDonald">
                 </div>
                 <div>
                     <label class=" text-xs md:text-sm block text-cgray-800 font-bold mb-2"  for="email">Email Address</label>
-                    <input class=" bg-gray-200 appearance-none border-2 border-gray-200 rounded py-1 px-4 w-full"  type="email" name="email">
+                    <input class=" bg-gray-200 appearance-none border-2 border-gray-200 rounded py-1 px-4 w-full"  type="email" id="email" name="email">
                 </div>
             </div>
 
             <div class=" grid grid-cols-1 sm:grid-cols-2 gap-3 mb-7">
                 <div>
                     <label class=" text-xs md:text-sm block text-cgray-800 font-bold mb-2" for="cName">Company name</label>
-                    <input class=" bg-gray-200  border-2 border-gray-200 rounded py-1 px-4 w-full" name="cName" type="text">
+                    <input class=" bg-gray-200  border-2 border-gray-200 rounded py-1 px-4 w-full" name="cName" id="cName" type="text">
                 </div>
                 <div>
-                    <label class=" text-xs md:text-sm block text-cgray-800 font-bold mb-2"  for="lName">Country</label>
-                    <select class="bg-gray-200 border-2 border-gray-200 rounded py-1 h-9 px-4 w-full" name="" id="">
+                    <label class=" text-xs md:text-sm block text-cgray-800 font-bold mb-2"  for="country">Country</label>
+                    <select class="bg-gray-200 border-2 border-gray-200 rounded py-1 h-9 px-4 w-full" aria-label="Select a Country" id="country">
                         <option value="USA">USA</option>
+                        <option value="USA">Pakistan</option>
+                        <option value="USA">India</option>
                     </select>
                 </div>
             </div>
 
             <div class=" mb-2">
                 <label class=" text-xs md:text-sm block text-cgray-800 font-bold mb-2"  for="msg">Message</label>
-                <textarea class=" resize-none bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 w-full" name="msg" cols="30" rows="5"></textarea>
+                <textarea class=" resize-none bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 w-full" id="msg" name="msg" cols="30" rows="5"></textarea>
             </div>
             <p class=" mb-5 text-gray-400 text-xs" >By clicking submit you agree to our terms of service, privacy policy and how we use data as stated</p>
             <div class=" text-center pb-3">
-                <button class=" inline-block bg-cindigo-700 px-7 py-3 rounded text-white" >SUBMIT</button>
+                <button aria-label="Submit the Form" role="button" class=" inline-block bg-cindigo-700 px-7 py-3 rounded text-white" >SUBMIT</button>
             </div>
         </form>
                         
